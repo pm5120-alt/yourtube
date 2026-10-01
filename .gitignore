@@ -1,0 +1,27 @@
+# dependencies
+**/node_modules/
+
+# Next.js
+**/.next/
+**/out/
+
+# local env
+**/.env
+**/.env.local
+**/.env.*.local
+
+# logs
+**/*.log
+
+# uploads generated at runtime
+server/uploads/*
+!server/uploads/.gitkeep
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# TypeScript build cache
+**/*.tsbuildinfo

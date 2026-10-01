@@ -1,0 +1,2 @@
+import { Star } from 'lucide-react'; import VideoCard from '@/components/VideoCard'; import { demoVideos } from '@/lib/demoData';
+export default function Liked(){return <div className="px-4 py-6 sm:px-6 lg:px-8"><Star className="text-amber-300"/><h1 className="mt-2 text-2xl font-black">Liked videos</h1><div className="mt-6 grid gap-x-5 gap-y-8 sm:grid-cols-2 xl:grid-cols-3">{demoVideos.slice(1,5).map(v=><VideoCard key={v.id} video={v}/>)}</div></div>}
