@@ -65,7 +65,7 @@ export default function Security() {
     localStorage.setItem('yourtube-device-id', deviceId);
     const now = new Date();
     const hour = hourIST();
-    const autoTheme = hour >= 5 && hour < 12 ? 'light' : 'dark';
+    const autoTheme: 'light' | 'dark' = hour >= 5 && hour < 12 ? 'light' : 'dark';
     const known = trusted.some((t) => t.deviceId === deviceId && new Date(t.trustedUntil).getTime() > Date.now());
     const entry = {
       id: `l-${Date.now()}`,
